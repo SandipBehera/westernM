@@ -1,0 +1,52 @@
+
+
+    <div class="section profile-content">
+        
+            <div class="row" style="margin-right: 0;">
+                <div class="col-lg-12 col-md-12" style="padding-right: 0px;">
+                    <h6 class="about_m_text"
+                    style="
+                      margin-top: 0px;
+                      font-weight: bolder;
+                      color: #c27555;
+                      text-align: center;
+                    ">Location</h6>
+                    <div class="card page-carousel">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7611.749956153369!2d78.385131!3d17.465697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d570b7fa6f%3A0xd9b0f03c3ed4724d!2sThe%20Pearl%20by%20Aurobindo%20Realty!5e0!3m2!1sen!2sin!4v1680989837324!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12" style="padding-right: 0px;">
+                    <h6 class="about_m_text"
+                    style="
+                      margin-top: 0px;
+                      font-weight: bolder;
+                      color: #c27555;
+                      text-align: center;
+                    ">Contact Us</h6>
+                    <div class="card page-carousel">
+                      <div class="contactMargin">
+                         <form [formGroup]="myForm" (ngSubmit)="OnSave()" novalidate>
+                            <div class="form-group mb-2">
+                              <input type="text" class="form-control form-control-lg border-0" [(ngModel)]="user.name" name="form_name" formControlName="name" placeholder="First Name, Last Name" required>
+                              <div *ngIf="myForm.controls['name'].errors?.required">Please enter name</div>
+                            </div>
+                            <div class="form-group mb-2">
+                              <input type="email" class="form-control form-control-lg border-0" [(ngModel)]="user.email" name="form_email" formControlName="email" placeholder="Your Email" required>
+                              <div *ngIf="myForm.controls['email'].touched && myForm.controls['email'].invalid" class="alert alert-danger">
+                                <div *ngIf="myForm.controls['email'].errors?.required">Please email id</div>
+                                <div *ngIf="myForm.controls['email'].errors?.pattern">invalid email id</div>
+                              </div>
+                            </div>
+                            <div class="form-group mb-2">
+                              <input type="tel" class="form-control form-control-lg border-0" [(ngModel)]="user.phone" formControlName="phone" name="form_phone" placeholder="Your phone" required>
+                              <div *ngIf="myForm.controls['phone'].touched && myForm.controls['phone'].invalid" class="alert alert-danger">
+                                <div *ngIf="myForm.controls['phone'].errors?.required">Please enter mobile number</div>
+                                <div *ngIf="myForm.controls['phone'].errors?.pattern">Mobile number is not 10 digit</div>
+                              </div>
+                            </div>                             
+                              <button class="btn btn-danger btn-block btn-round" [disabled]="!myForm.valid" type="submit" style="margin-top: 3%;">Book Now</button>
+                         </form>
+                        </div>
+            </div>
+            
+    </div>

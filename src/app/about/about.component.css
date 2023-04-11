@@ -1,0 +1,34 @@
+.ab-img{
+    width: 100%;
+    margin-top: 20%;
+    border-radius: 6px;
+}
+
+.txt-margin{
+    width: 100%;
+    margin-top: 40%;
+    text-align: center;
+    background-color: #132343 !important;
+}
+.about{
+    margin-top: 0.5%;
+    background-color: #132343;
+}
+@media only screen and (max-width: 769px){
+    .ab-img{
+        width: 100%;
+        margin-top: 0%;
+    }
+    .txt-margin{
+        width: 100%;
+        margin-top: 0%;
+        text-align: center;
+        background-color: #132343 !important;
+    }
+    .about{
+        margin-top: 0.5%;
+        background-color:"#132343";
+        padding: 0px !important;
+    }
+
+}
