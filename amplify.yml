@@ -8,7 +8,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist/sumadhura-olympus
+    baseDirectory: dist/the-pearl
     files:
       - '**/*'
   cache:
