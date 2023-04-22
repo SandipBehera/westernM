@@ -25,7 +25,7 @@
                     ">Contact Us</h6>
                     <div class="card page-carousel">
                       <div class="contactMargin">
-                         <form [formGroup]="myForm" (ngSubmit)="OnSave()" novalidate>
+                         <form [formGroup]="myForm" (ngSubmit)="OnSave()" novalidate style="padding: 10px;">
                             <div class="form-group mb-2">
                               <input type="text" class="form-control form-control-lg border-0" [(ngModel)]="user.name" name="form_name" formControlName="name" placeholder="First Name, Last Name" required>
                               <div *ngIf="myForm.controls['name'].errors?.required">Please enter name</div>
@@ -44,7 +44,7 @@
                                 <div *ngIf="myForm.controls['phone'].errors?.pattern">Mobile number is not 10 digit</div>
                               </div>
                             </div>                             
-                              <button class="btn btn-danger btn-block btn-round" [disabled]="!myForm.valid" type="submit" style="margin-top: 3%;">Book Now</button>
+                              <button class="btn btn-block btn-round"  [disabled]="!myForm.valid" type="submit" style="margin-top: 3%;background-color: #132343;">Book Now</button>
                          </form>
                         </div>
             </div>
