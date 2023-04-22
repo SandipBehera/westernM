@@ -14,10 +14,14 @@
 .sec_d{
     width: 20%;
  }
- 
+ .desk-vis{
+    display: block;
+ }
  @media only screen and (max-width: 769px){
      .sec_d{
          width:26%;
      }
-    
+     .desk-vis{
+        display: none;
+     }
  }
