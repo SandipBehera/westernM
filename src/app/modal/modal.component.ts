@@ -21,7 +21,7 @@ export class ModalComponent implements OnInit {
   ipAddress:any;
   IpAddress:any=this.getIp();
   myForm:FormGroup|any;
-  @Input() user:User={name:'',email:'',phone:'', url:'Ashoka Spectra'};
+  @Input() user:User={name:'',email:'',phone:'', url:'the pearl'};
   constructor( private http:HttpClient,private userService: UserService,public activeModal: NgbActiveModal,public location:Location,private ipAdd:IpServiceService,private formbuilder:FormBuilder) {
     this.Createform();
    }
@@ -33,7 +33,7 @@ export class ModalComponent implements OnInit {
       Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
     ])],
     phone:['',[Validators.required,Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
-    url:'Ashoka Spectra'
+    url:'the pearl'
   })
  }
   
