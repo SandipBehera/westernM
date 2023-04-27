@@ -62,12 +62,11 @@ export class ModalComponent implements OnInit {
   
   OnSave():void{
     
-    this.userService.formSubmit(this.user).subscribe(()=>
+    this.userService.formSubmit(this.user).subscribe((res:any)=>
     this.goBack()
     );
   }
   goBack():void{
-    gtag('event', 'conversion', {'send_to': 'AW-401331995/hE3KCKGrxawDEJuur78B'});
     window.location.href='/thankyou';
   }
 
