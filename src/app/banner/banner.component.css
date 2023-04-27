@@ -22,7 +22,7 @@
 }
 
 .homeBanner {
-  background-image: url("../../assets/img/aurobindo_images/PEARL_WEB-BANNERS_v2_Artboard-2-copy-5.jpg");
+  background-image: url("../../assets/img/aurobindo_images/desktop_banner.png");
 }
 @media only screen and (max-width: 769px) {
   .homeBanner {
