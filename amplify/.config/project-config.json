@@ -1,12 +1,12 @@
 {
-  "projectName": "thepearl",
+  "projectName": "westernmarina",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
     "framework": "angular",
     "config": {
       "SourceDir": "src",
-      "DistributionDir": "dist/the-pearl",
+      "DistributionDir": "dist",
       "BuildCommand": "npm run-script build",
       "StartCommand": "ng serve"
     }
