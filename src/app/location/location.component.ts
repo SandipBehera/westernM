@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { IpServiceService } from '../ip-service.service';
 import { ModalComponent } from '../modal/modal.component';
@@ -18,9 +18,9 @@ export class LocationComponent implements OnInit {
   focus2:any;
   ipAddress:any;
   IpAddress:any=this.getIp();
-  public myForm:FormGroup|any;
+  public myForm:UntypedFormGroup|any;
   @Input() user:User={name:'',email:'',phone:'',url:'Western Marina'};
-  constructor(private modalService: NgbModal,private http:HttpClient,private userService: UserService,private ipAdd:IpServiceService,private formbuilder:FormBuilder) { 
+  constructor(private modalService: NgbModal,private http:HttpClient,private userService: UserService,private ipAdd:IpServiceService,private formbuilder:UntypedFormBuilder) { 
 this.Createform();
   }
 

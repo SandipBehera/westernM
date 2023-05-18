@@ -5,7 +5,7 @@ import { UserService } from '../service';
 import {Location} from '@angular/common';
 import { IpServiceService } from '../ip-service.service';
 import { HttpClient } from '@angular/common/http';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 declare let gtag: Function;
 @Component({
   selector: 'app-modal',
@@ -20,9 +20,9 @@ export class ModalComponent implements OnInit {
   focus2:any;
   ipAddress:any;
   IpAddress:any=this.getIp();
-  myForm:FormGroup|any;
+  myForm:UntypedFormGroup|any;
   @Input() user:User={name:'',email:'',phone:'', url:'Western Marina'};
-  constructor( private http:HttpClient,private userService: UserService,public activeModal: NgbActiveModal,public location:Location,private ipAdd:IpServiceService,private formbuilder:FormBuilder) {
+  constructor( private http:HttpClient,private userService: UserService,public activeModal: NgbActiveModal,public location:Location,private ipAdd:IpServiceService,private formbuilder:UntypedFormBuilder) {
     this.Createform();
    }
  Createform(){
