@@ -22,11 +22,11 @@
 }
 
 .homeBanner {
-  background-image: url("../../assets/img/aurobindo_images/desktop_banner.png");
+  background-image: url("../../assets/img/western/sitec-1.jpg");
 }
 @media only screen and (max-width: 769px) {
   .homeBanner {
-    background-image: url("../../assets/img/aurobindo_images/mobile_1.png");
+    background-image: url("../../assets/img/western/Image-49.jpg");
   }
 }
 .desk-none {

@@ -12,7 +12,7 @@ declare var gtag:Function;
 })
 
 export class AppComponent {
-  title = 'the pearl';
+  title = 'Western Marina';
   ipAddress:any;
   constructor(public router:Router,private modalService: NgbModal,private http:HttpClient){
   }

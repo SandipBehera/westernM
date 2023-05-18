@@ -8,11 +8,11 @@
     width: 100%;
     margin-top: 14%;
     text-align: center;
-    background-color: #132343 !important;
+    background-color: black !important;
 }
 .about{
     margin-top: 0.5%;
-    background-color: #132343;
+    background-color: black;
 }
 @media only screen and (max-width: 769px){
     .ab-img{
@@ -23,11 +23,11 @@
         width: 100%;
         margin-top: 0%;
         text-align: center;
-        background-color: #132343 !important;
+        background-color: black !important;
     }
     .about{
         margin-top: 0.5%;
-        background-color:"#132343";
+        background-color: black;
         padding: 0px !important;
     }
 

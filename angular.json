@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "the-pearl": {
+    "western-marina": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/the-pearl",
+            "outputPath": "dist/western-marina",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,7 +30,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/sass/paper-kit.scss",
               "src/assets/css/demo.css",
-              "src/assets/css/nucleo-icons.css"
+              "src/assets/css/nucleo-icons.css",
+              "./node_modules/ngx-lightbox/lightbox.css"
             ],
             "scripts": []
           },
@@ -71,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "the-pearl:build:production"
+              "browserTarget": "western-marina:build:production"
             },
             "development": {
-              "browserTarget": "the-pearl:build:development"
+              "browserTarget": "western-marina:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "the-pearl:build"
+            "browserTarget": "western-marina:build"
           }
         },
         "test": {
@@ -105,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "the-pearl"
+  "defaultProject": "western-marina"
 }
