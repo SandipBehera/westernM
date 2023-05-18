@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install --package-lock-only
+        - npm install --force
         - npm ci --force
     build:
       commands:
