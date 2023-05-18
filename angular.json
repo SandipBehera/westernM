@@ -106,5 +106,7 @@
       }
     }
   },
-  "defaultProject": "western-marina"
+  "cli": {
+    "analytics": "00c29369-aad4-4d74-83e7-9ffebc4974d4"
+  }
 }

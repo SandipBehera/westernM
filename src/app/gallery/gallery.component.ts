@@ -15,7 +15,7 @@ export class GalleryComponent implements OnInit {
     private modalService: NgbModal,
     private _lightbox: Lightbox
   ) {
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 6; i++) {
       const src = 'assets/img/western/' + i + '.jpg';
       const caption = 'Image ' + i + ' caption here';
       const thumb = 'assets/img/western/' + i + '.jpg';
